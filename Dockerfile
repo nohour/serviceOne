@@ -20,6 +20,6 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node && \
 	 npm install
 
 
-EXPOSE 3000
+EXPOSE 3100
 
 CMD cd /src && node ./server.js
