@@ -1,11 +1,11 @@
 'use strict';
 var express = require('express');
 var app = express();
-var PORT = 3000;
+var PORT = 3100;
 var os = require('os')
 
-app.get('/about', function (req, res) {
-	let str = 'Its server ' + os.hostname() + 'Hello world'
+app.get('/', function (req, res) {
+	let str = 'Its Test Api Hello world running on container: ' + os.hostname()
 	res.send(str);
 	
 });
