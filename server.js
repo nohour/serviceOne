@@ -5,7 +5,7 @@ var PORT = 3100;
 var os = require('os')
 
 app.get('/', function (req, res) {
-	let str = 'Its Test Api Hello world running on container: ' + os.hostname()
+	let str = 'It is a Test Api Hello world running on container: ' + os.hostname()
 	res.send(str);
 	
 });
