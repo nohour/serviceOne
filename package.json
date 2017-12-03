@@ -9,6 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.13.2"
+=======
+    "express": "3.2.4",
+    "pug": "1.11.0",
+    "mocha": "1.20.1",
+    "supertest": "1.1.0"
+>>>>>>> 171e54f3737bb6203ed071524991d9a43b448222
   }
 }
