@@ -1,0 +1,88 @@
+{
+"vcUser": "Administrator@vsphere.local",
+"vcPass": "CyberTrainer1!",
+"CommonNetParams":{
+	"VCip": "1",
+	"ShareIp":"2",
+	"SQLIp":"190",
+	"DNSIp":"10",
+	"TMSIp": "221",
+	"StationIP":"200",
+	"DefaultGatewayIp":"254",
+  "SubnetMaskIp":"255.255.255.0",
+  "ShareServer":"10.72.53.9"
+	},
+"segments": [
+  { 
+     "segment": "QA",
+     "strart_class": "1",
+     "end_class":"4",
+     "ipSegment":"10.1.83",
+     "AgentipSegment":"10.1.8",
+     "ip_trainer":"10.1.82",
+     "ip_trainee":"10.1.81",
+     "baseVlan":"600",
+     "s":"3",
+     "classGAP":"100",
+     "snd":"72",
+     "trd":"43"
+   },
+   { 
+     "segment": "Dev",
+     "strart_class": "1",
+     "end_class":"8",
+     "ipSegment":"10.72.43",
+     "AgentipSegment":"10.72.4",
+     "ip_trainer":"10.72.42",
+     "ip_trainee":"10.72.41",
+     "baseVlan":"1000",
+     "s":"4",
+     "classGAP":"20",
+     "snd":"72",
+     "trd":"33"
+   },
+   { 
+     "segment": "Build",
+     "strart_class":"1",
+     "end_class":"8",
+     "ipSegment":"10.72.53",
+     "AgentipSegment":"10.72.5",
+     "ip_trainer":"10.72.52",
+     "ip_trainee":"10.72.51",
+     "baseVlan":"2000",
+     "s":"5",
+     "classGAP":"100",
+     "snd":"72",
+     "trd":"53"
+   },
+   { 
+     "segment": "Upgrade",
+     "strart_class": "1",
+     "end_class":"2",
+     "ipSegment":"10.72.63",
+     "AgentipSegment":"10.72.6",
+     "ip_trainer":"10.72.62",
+     "ip_trainee":"10.72.61",
+     "baseVlan":"",
+     "s":"",
+     "classGAP":"100",
+     "snd":"72",
+     "trd":"63"
+   },
+   { 
+     "segment": "Demo",
+     "strart_class": "1",
+     "end_class":"2",
+     "vcIP": "",
+     "ipSegment":"",
+     "AgentipSegment":"10.72.5",
+     "ip_trainer":"",
+     "ip_trainee":"",
+     "baseVlan":"",
+     "s":"",
+     "classGAP":"100",
+     "snd":"73",
+     "trd":"53"
+   }
+  ]
+}
